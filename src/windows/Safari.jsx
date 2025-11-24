@@ -52,11 +52,11 @@ const Safari = () => {
         <div className="space-y-8">
           {blogPosts.map(({ id, image, title, date, link }) => (
             <div key={id} className="blog-post">
-              <div className="col-span-2">
+              <div>
                 <img src={image} alt={title} />
               </div>
 
-              <div className="content">
+              <div className="content text-left">
                 <p>{date}</p>
                 <h3>{title}</h3>
                 <a href={link} target="_blank" rel="noopener noreferrer">
